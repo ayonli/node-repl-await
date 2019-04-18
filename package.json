@@ -1,0 +1,35 @@
+{
+  "name": "process-top-level-await",
+  "version": "0.1.0",
+  "description": "Standalone util function from Node.js core to process await statements in REPL.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hyurl/process-top-level-await.git"
+  },
+  "keywords": [
+    "repl",
+    "await",
+    "async",
+    "shell",
+    "console",
+    "terminal"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nodejs/node/issues"
+  },
+  "homepage": "https://nodejs.org",
+  "dependencies": {
+    "acorn": "^6.1.1",
+    "acorn-walk": "^6.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^11.13.5",
+    "mocha": "^6.1.3"
+  }
+}
