@@ -1,5 +1,5 @@
 {
-  "name": "process-top-level-await",
+  "name": "node-repl-await",
   "version": "0.1.0",
   "description": "Standalone util function from Node.js core to process await statements in REPL.",
   "main": "index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hyurl/process-top-level-await.git"
+    "url": "git+https://github.com/hyurl/node-repl-await.git"
   },
   "keywords": [
     "repl",

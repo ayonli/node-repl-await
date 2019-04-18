@@ -1,4 +1,4 @@
-# processTopLevelAwait
+# Node's processTopLevelAwait
 
 Standalone util function from Node.js core to process await statements in REPL.
 
@@ -19,7 +19,7 @@ for more details, and contribute to the
 ```javascript
 const repl = require("repl");
 const vm = require("vm");
-const { processTopLevelAwait } = require("process-top-level-await");
+const { processTopLevelAwait } = require("node-repl-await");
 
 function isRecoverableError(error) {
     if (error.name === 'SyntaxError') {
