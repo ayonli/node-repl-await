@@ -1,3 +1,4 @@
+/* global describe, it */
 const assert = require("assert");
 const { processTopLevelAwait } = require(".");
 
@@ -11,11 +12,6 @@ describe("processTopLevelAwait", () => {
         assert.strictEqual(processTopLevelAwait("foo = await 123"), "(async () => { return (foo = await 123) })()");
         assert.strictEqual(processTopLevelAwait("foo = await 123;"), "(async () => { return (foo = await 123); })()");
         assert.strictEqual(processTopLevelAwait("let foo; foo = await 123;"), "(async () => { void (foo=undefined); return (foo = await 123); })()");
-    });
-
-    it("should not process any malform statement", () => {
-        assert.strictEqual(processTopLevelAwait("await 12_3"), null);
-        assert.strictEqual(processTopLevelAwait("await 123; let foo = 12_3"), null);
     });
 
     it("should not process any statement without top level await keyword", () => {
