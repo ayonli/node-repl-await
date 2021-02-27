@@ -25,12 +25,11 @@
   },
   "homepage": "https://nodejs.org",
   "dependencies": {
-    "acorn": "^6.3.0",
-    "acorn-class-fields": "^0.3.1",
-    "acorn-numeric-separator": "^0.3.0",
-    "acorn-private-methods": "^0.3.0",
-    "acorn-static-class-features": "^0.2.0",
-    "acorn-walk": "^6.2.0"
+    "acorn": "^8.0.5",
+    "acorn-class-fields": "^1.0.0",
+    "acorn-private-methods": "^1.0.0",
+    "acorn-static-class-features": "^1.0.0",
+    "acorn-walk": "^8.0.2"
   },
   "devDependencies": {
     "@types/node": "^11.15.2",
